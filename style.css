@@ -2,6 +2,10 @@ body{
     margin:0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .topbar_container{
     max-width:1920px;
     background:#000080;
@@ -22,8 +26,9 @@ body{
     width:50%;
 }
 
-.secondary_menu_content{
+ul.secondary_menu_content{
     text-align: right;
+    margin:10px 0;
 }
 
 .secondary_menu_item{
@@ -34,7 +39,7 @@ body{
 
 a.btn{
     display: inline-block;
-    padding:16px 20px;
+    padding:10px 20px;
     color:#fff;
     background:#3365B7;
 }
@@ -68,4 +73,14 @@ li.main_menu_item{
 
 .logo_container{
     padding:20px;
+}
+
+.main_content{
+    height:920px;
+}
+
+.content_section p{
+    text-align:center;
+    font-size:20px;
+    padding:100px;
 }
