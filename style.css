@@ -1,5 +1,6 @@
 body{
     margin:0;
+    font-family:'Montserrat', sans-serif;
 }
 
 a{
@@ -83,4 +84,15 @@ li.main_menu_item{
     text-align:center;
     font-size:20px;
     padding:100px;
+}
+
+footer p{
+    margin:0;
+    text-align:center;
+    color:#fff;
+}
+
+footer{
+    background:#000080;
+    padding:15px;
 }
