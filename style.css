@@ -70,11 +70,30 @@ a.btn{
     text-align:right;
 }
 
-li.main_menu_item{
+li.main_menu_item, li.sub_menu_item{
     list-style:none;
     display:inline-block;
     padding:0 10px;
     font-size:18px;
+}
+
+li.sub_menu_item{
+    display:block;
+    padding:5px 0;
+    color:#fff;
+}
+
+.sub_menu{
+    position: absolute;
+    background: #000080;
+    top: 100%;
+    float: right;
+    right: 0px;
+}
+
+.sub_menu ul{
+    padding-right:40px;
+    width:fit-content;
 }
 
 #header_nav_section{
@@ -108,6 +127,18 @@ li.main_menu_item{
     background:#fff;
 }
 
+.mobile_navbar{
+    float:right;
+    padding:20px;
+}
+
+.mobile_navbar::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f0c9";
+    font-size:35px;
+}
+
 .main_content{
     height:920px;
 }
@@ -127,4 +158,11 @@ footer p{
 footer{
     background:#092180;
     padding:15px;
+}
+
+/****RESPONSIVE****/
+@media (max-device-width:800px){
+    .navbar, .topbar_container{
+        display:none;
+    }
 }
