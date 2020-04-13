@@ -65,28 +65,30 @@ a.btn{
     text-align:right;
 }
 
-li.main_menu_item, li.sub_menu_item{
+li.main_menu_item{
     list-style:none;
     display:inline-block;
     padding:0 10px;
     font-size:18px;
 }
 
-li.sub_menu_item{
+li.responsive_nav_item{
     display:block;
     padding:5px 0;
     color:#fff;
 }
 
-.sub_menu{
-    position: absolute;
+.responsive_nav{
+    position: fixed;
     background: #000080;
-    top: 100%;
+    top: 10%;
     float: right;
     right: 0px;
+    z-index:999;
+    display:none;
 }
 
-.sub_menu ul{
+.responsive_nav ul{
     padding-right:40px;
     width:fit-content;
 }
@@ -127,14 +129,24 @@ li.sub_menu_item{
 }
 
 .mobile_navbar{
-    float:right;
-    padding:20px;
+    padding:10px;
+    z-index:999;
+    position:fixed;
+    right:0;
+    display:none;
 }
 
-.mobile_navbar::after{
+.navbar_close::after{
     font-family: "Font Awesome 5 Free"; 
     font-weight: 900;
     content: "\f0c9";
+    font-size:35px;
+}
+
+.navbar_open::after{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    content: "\f00d";
     font-size:35px;
 }
 
@@ -161,7 +173,11 @@ footer{
 
 /****RESPONSIVE****/
 @media (max-device-width:800px){
-    .navbar, .topbar_container{
+    #header_nav_section{
         display:none;
+    }
+
+    .mobile_navbar{
+        display:block;
     }
 }
