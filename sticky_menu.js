@@ -2,9 +2,9 @@ let navbar = document.getElementById('navbar');
 let header_nav_section = document.getElementById('header_nav_section');
 let main_content = document.getElementById('main_content');
 
+
 let offset_position = navbar.offsetTop;
 let lastScrollTop = 0;
-
 
 window.onload = function () {
     header_height = header_nav_section.clientHeight+"px";

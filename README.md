@@ -1,5 +1,5 @@
 # UX-Sticky-Menu
-Simple sticky menu UX optimised and SEO friendly
+Simple sticky menu UX optimised
 
 Secondary menu bar contains a callto on the left content and a menu in the right content with generic pages like home, reviews and contact.
 
