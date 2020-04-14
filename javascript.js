@@ -25,7 +25,6 @@ window.addEventListener("scroll", function(){
 	lastScrollTop = scroll_top;
 });
 
-
 /*RESPONSIVE MENU SCRIPT*/
 let mobile_nav = document.getElementById('mobile_navbar');
 let responsive_nav = document.getElementById('responsive_nav');

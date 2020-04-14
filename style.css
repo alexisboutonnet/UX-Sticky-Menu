@@ -1,3 +1,4 @@
+/*GLOBAL*/
 body{
     margin:0;
     font-family:'Montserrat', sans-serif;
@@ -7,6 +8,7 @@ a{
     text-decoration: none;
 }
 
+/*STICKY MENU AND RESPONSIVE*/
 .topbar_container{
     max-width:1920px;
     background:#000080;
@@ -27,22 +29,22 @@ a{
     width:50%;
 }
 
+a.btn{
+    display:inline-block;
+    padding:10px 20px;
+    color:#fff;
+    background:#3365B7;
+}
+
 ul.secondary_menu_content{
-    text-align: right;
+    text-align:right;
     margin:10px 0;
 }
 
 .secondary_menu_item{
-    display: inline-block;
+    display:inline-block;
     padding:0 10px;
     color:#fff;
-}
-
-a.btn{
-    display: inline-block;
-    padding:10px 20px;
-    color:#fff;
-    background:#3365B7;
 }
 
 .navbar_container{
@@ -81,7 +83,7 @@ li.responsive_nav_item{
 .responsive_nav{
     position: fixed;
     background: #000080;
-    top: 10%;
+    top: 60px;
     float: right;
     right: 0px;
     z-index:999;
@@ -91,25 +93,6 @@ li.responsive_nav_item{
 .responsive_nav ul{
     padding-right:40px;
     width:fit-content;
-}
-
-#header_nav_section{
-    position:fixed;
-    width:100%;
-    z-index:999;
-}
-
-#main_content{
-    position:relative;
-    background:#f5f5f5;
-}
-
-.navbar_container{
-    background:#fff;
-}
-
-.content_section{
-    padding:20px;
 }
 
 .hidden_menu{
@@ -122,10 +105,6 @@ li.responsive_nav_item{
 
 .logo_container{
     padding:20px;
-}
-
-.navbar{
-    background:#fff;
 }
 
 .mobile_navbar{
@@ -150,6 +129,26 @@ li.responsive_nav_item{
     font-size:35px;
 }
 
+.navbar_container{
+    background:#fff;
+}
+
+#header_nav_section{
+    position:fixed;
+    width:100%;
+    z-index:999;
+}
+
+/*CONTENT*/
+#main_content{
+    position:relative;
+    background:#f5f5f5;
+}
+
+.content_section{
+    padding:20px;
+}
+
 .main_content{
     height:920px;
 }
@@ -160,6 +159,7 @@ li.responsive_nav_item{
     padding:100px;
 }
 
+/*FOOTER*/
 footer p{
     margin:0;
     text-align:center;
@@ -171,7 +171,7 @@ footer{
     padding:15px;
 }
 
-/****RESPONSIVE****/
+/*RESPONSIVE*/
 @media (max-device-width:800px){
     #header_nav_section{
         display:none;
